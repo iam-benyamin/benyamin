@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 export default function Home() {
-  console.log('function Home')
   return (
     <>
       <Head>
