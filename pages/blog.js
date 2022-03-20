@@ -13,7 +13,7 @@ export const Blog = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            router.push("https://medium.com/@benyamin_mahmaoudyan")
+            router.push("https://medium.com/@iam_benyamin")
         }, 8000)
     }, [])
     
