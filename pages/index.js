@@ -1,6 +1,17 @@
 import Head from 'next/head'
 
-export default function Home() {
+export const endPoint = 'http://bmahmoudyan.pythonanywhere.com/me/'
+export async function getServerSideProps() {
+  const about = await (await fetch(`${endPoint}about/`)).json()
+  return {
+    props: {
+      about
+    }
+  }
+}
+
+export default function Home({ about }) {
+  console.log(about)
   return (
     <>
       <Head>
@@ -11,7 +22,16 @@ export default function Home() {
         <link type="image/png" sizes="120x120" rel="icon" href="/boy-120.png"></link>
       </Head>
       <div className='container'>
-        this is home
+        <div className='about'>
+          {about.results.map((about) => {
+            return (
+              <div className='about-item'>
+                <p>{about.text}</p>
+                <img src={about.pictuer} />
+              </div>
+            )
+          })}
+        </div>
       </div>
     </>
   )

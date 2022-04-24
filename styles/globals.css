@@ -12,7 +12,6 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 a {
   text-decoration: none;
   display: inline-block;
@@ -75,4 +74,73 @@ a {
 
 .nav .links a:hover {
   color: #0e0e0e;
+}
+
+.tags span {
+  padding: 10px auto;
+  margin: 15px;
+}
+.tags ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.tags .tags-item {
+  font-size: 12px;
+  padding: 4px 6px;
+  color: #444444;
+  border: 1px solid #333;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.projects {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.projects-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.projects-item .text {
+  width: 100%;
+  margin-right: 20px;
+}
+.projects-item .text a {
+  color: #444444;
+}
+.projects-item .text a:hover {
+  text-decoration: underline;
+}
+.projects-item .text p {
+  margin: 10px 0;
+  color: #444444;
+}
+.projects-item img {
+  border-radius: 15px;
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.about {
+  margin: 40px auto;
+}
+
+.about .about-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.about .about-item p {
+  max-width: 50%;
+}
+.about .about-item img {
+  max-width: 50%;
+  max-height: 400px;
+}
+
+.about .about-item:nth-child(even) {
+  direction: rtl;
 }
