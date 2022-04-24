@@ -13,7 +13,6 @@ export async function getServerSideProps() {
 }
 
 export default function Works({ tags, work }) {
-  console.log(work)
   return (
     <>
       <Head>
@@ -28,7 +27,7 @@ export default function Works({ tags, work }) {
           <ul>
             {tags.results.map((item) => {
               return (
-                <li className='tags-item'>{item.name}</li>
+                <li key={item.name} className='tags-item'>{item.name}</li>
               )
             })}
           </ul>
@@ -36,7 +35,7 @@ export default function Works({ tags, work }) {
         <div className='projects'>
           {work.results.map((work) => {
             return (
-              <div className='projects-item'>
+              <div key={work.title} className='projects-item'>
                 <div className='text'>
                   <a href={work.link}><h2>{work.title}</h2></a>
                   <p>{work.description}</p>

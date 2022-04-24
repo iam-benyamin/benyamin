@@ -11,7 +11,6 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ about }) {
-  console.log(about)
   return (
     <>
       <Head>
@@ -25,7 +24,7 @@ export default function Home({ about }) {
         <div className='about'>
           {about.results.map((about) => {
             return (
-              <div className='about-item'>
+              <div key={about.id} className='about-item'>
                 <p>{about.text}</p>
                 <img src={about.pictuer} />
               </div>
