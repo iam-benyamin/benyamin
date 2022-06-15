@@ -20,12 +20,12 @@ export const Blog = () => {
     return (
         <>
             <Head>
-                <title>Benyamin | blog</title>
+                <title>بنیامین | مقالات</title>
             </Head>
             <div className="container">
                 <div className={styles.blog} >
                     <p>
-                        Hi, there. I write in a medium as my blog.<br /> I will redirect you to my medium page in <span>{time}</span> seconds
+                    أهلاً. أنا أكتب في وسيط مثل مدونتي.<br /> سأعيد توجيهك إلى صفحتي المتوسطة بتنسيق <span>{time}</span> ثواني
                     </p>
                 </div>
             </div>

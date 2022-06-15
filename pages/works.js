@@ -16,7 +16,7 @@ export default function Works({ tags, work }) {
   return (
     <>
       <Head>
-        <title>I am Benyamin</title>
+        <title>انا بنیامین</title>
         <link type="image/png" sizes="16x16" rel="icon" href="/boy-16.png"></link>
         <link type="image/png" sizes="32x32" rel="icon" href="/boy-32.png"></link>
         <link type="image/png" sizes="96x96" rel="icon" href="/boy-96.png"></link>
